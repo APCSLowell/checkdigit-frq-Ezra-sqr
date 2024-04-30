@@ -7,14 +7,8 @@ public class CheckDigit
    */  
    public static int getCheck(int num) 
    {  
-     int k=num;
-     int len=0;
-     while (k>0){
-       k=k/10;
-       len++;
-     }
      int sum =0;
-     for(int i=8-len; i<8; i++){
+     for(int i=8-getNumberOfDigits(num); i<8; i++){
        sum+=getDigit(num,1)*i;
        num=num/10;
      }
