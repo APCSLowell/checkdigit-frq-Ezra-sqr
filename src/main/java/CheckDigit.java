@@ -15,7 +15,7 @@ public class CheckDigit
      }
      int sum =0;
      for(int i=8-len; i<8; i++){
-       sum+=(getDigit(num,1)*i;
+       sum+=getDigit(num,1)*i;
        num=num/10;
      }
      return sum%10;
@@ -29,7 +29,7 @@ public class CheckDigit
    */     
    public static boolean isValid(int numWithCheckDigit)    
    {      
-     if (getCheck(numWithCheckDigit/10)==getDigit(numWithCheckDigit,1)
+     if (getCheck(numWithCheckDigit/10)==getDigit(numWithCheckDigit,1))
          return true;
      return false;
    }    
